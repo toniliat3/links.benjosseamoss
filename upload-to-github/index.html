@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Benjo's Seamoss | Taste the Islands</title>
+  <meta name="description" content="Follow Benjo's Seamoss on TikTok, Facebook and Instagram.">
+  <meta name="theme-color" content="#106eb6">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Benjo's Seamoss | Taste the Islands">
+  <meta property="og:description" content="Follow Benjo's Seamoss on TikTok, Facebook and Instagram.">
+  <meta property="og:url" content="https://toniliat3.github.io/links.benjosseamoss/">
+  <meta property="og:image" content="https://toniliat3.github.io/links.benjosseamoss/assets/share-image.png">
+  <link rel="icon" type="image/png" href="assets/share-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #106eb6;
+      --card: #ffffff;
+      --pill: #eaeef2;
+      --pill-hover: #dde3e9;
+      --ink: #111111;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; overflow-x: hidden; overflow-x: clip; }
+
+    img { height: auto; }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 32px 64px;
+      background: var(--blue) url("assets/background.jpg") center / cover no-repeat fixed;
+      font-family: "Paytone One", "Arial Rounded MT Bold", system-ui, sans-serif;
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* All positions below are in cqw (1% of the card width) so the
+       layout scales as one piece, matching the mockup at any size. */
+    .stage {
+      position: relative;
+      width: min(100%, 400px);
+      container-type: inline-size;
+    }
+
+    .card {
+      position: relative;
+      background: var(--card);
+      border-radius: 7cqw;
+      padding: 5cqw 0 14cqw;
+      box-shadow: 0 2cqw 6cqw rgba(0, 0, 0, 0.18);
+    }
+
+    .logo {
+      display: block;
+      width: 40cqw;
+      margin: 0 auto 2cqw;
+      padding-left: 6cqw;
+    }
+
+    .headline {
+      display: block;
+      width: 74cqw;
+      margin: 0 auto 7cqw;
+      padding-left: 6cqw;
+    }
+
+    .links {
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0 11cqw;
+      display: grid;
+      gap: 6cqw;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      gap: 3.5cqw;
+      width: 80cqw;
+      padding: 2.4cqw 3cqw;
+      background: var(--pill);
+      border-radius: 99px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 6.4cqw;
+      line-height: 1;
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .links a:hover { background: var(--pill-hover); transform: translateX(1cqw); }
+    .links a:active { transform: scale(0.98); }
+    .links a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+    .links img {
+      width: 9.5cqw;
+      height: 9.5cqw;
+      flex: none;
+    }
+
+    .bottle {
+      position: absolute;
+      z-index: 2;
+      pointer-events: none;
+      filter: drop-shadow(0 1.5cqw 2cqw rgba(0, 0, 0, 0.2));
+    }
+
+    .bottle--pure {
+      width: 33cqw;
+      left: -12cqw;
+      top: -20cqw;
+    }
+
+    .bottle--original {
+      width: 46cqw;
+      right: -15cqw;
+      top: 60cqw;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .links a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <div class="card">
+      <h1 class="sr-only">Benjo's Seamoss: Taste the Islands</h1>
+      <img class="logo" src="assets/logo.webp" alt="Benjo's Seamoss" width="640" height="264">
+      <img class="headline" src="assets/taste-the-islands.webp" alt="" width="900" height="376">
+
+      <ul class="links">
+        <li>
+          <a href="https://www.tiktok.com/@drinkbenjosseamoss">
+            <img src="assets/tiktok.png" alt="" width="120" height="120">
+            <span>Tiktok</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/DrinkBenjosSeamoss">
+            <img src="assets/facebook.png" alt="" width="120" height="120">
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/benjosseamoss/">
+            <img src="assets/instagram.png" alt="" width="120" height="120">
+            <span>Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <img class="bottle bottle--pure" src="assets/bottle-pure.webp" alt="" width="360" height="904">
+    <img class="bottle bottle--original" src="assets/bottle-original.webp" alt="" width="420" height="909">
+  </main>
+</body>
+</html>
